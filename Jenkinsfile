@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh '''
         python test.py
-        curl localhost:5000
+        slep 10
         '''
       }
       post {

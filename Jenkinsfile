@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh '''
         python test.py
-        sleep 10
+        sleep 100
         '''
       }
       post {

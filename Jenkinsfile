@@ -8,7 +8,10 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh 'python test.py'
+        sh '''
+        python test.py
+        curl localhost:5000
+        '''
       }
       post {
         always {
